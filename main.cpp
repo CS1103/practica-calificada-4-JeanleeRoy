@@ -7,7 +7,7 @@
 
 using namespace std;
 
-template <class T>
+template <typename T>
 void maximoDeHilo(vector<T> &vector, int inf, int sup, T &max) {
     max = vector[inf];
     for (int i = inf; i < sup ; ++i)
@@ -50,7 +50,7 @@ int main() {
         hilos[i].join();
     }
 
-    int max = valorMaximo(valores_maximos);          //el maximoDeHilo de los valores maximos
+    int max = valorMaximo(valores_maximos);          //el maximo de los valores maximos
 
     for (auto i : valores_maximos) {                 //Prueba
         assert(max >= i);
